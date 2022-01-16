@@ -95,7 +95,6 @@ def setMetadata(classIdx, advancedNFT, tokenId, acc):
 
         # store link and other metadata to a json obj
         metadata["name"] = f"{className}-{tokenId}"
-        metadata["date"] = date.today().strftime("%d/%m/%Y")
         metadata["image"] = image_uri
 
         saveToFile(metadataFilePath, metadata)
